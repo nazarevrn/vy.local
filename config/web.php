@@ -55,16 +55,17 @@ $config = [
             'rules' => [
         
                 '/' => 'site/index',
-                'products'  => 'site/index',
-                'products/add'  => 'site/index',
-                'products/<id:\d+>'  => 'site/index',
+                'vacations/list'  => 'site/index',
+                'vacations/add'  => 'site/index',
+                'vacations/delete'  => 'site/index',
+                'vacations/approve'  => 'site/index',
                 //...
         
             [       /*
-                    api будет доступен по url, начинающимся с /api/products. но перенаправляться при этом на site/index
+                    api будет доступен по url, начинающимся с /api/vacations. но перенаправляться при этом на site/index
                     */
                     'class' => 'yii\rest\UrlRule',
-                    'controller' => 'product',
+                    'controller' => 'vacations',
                     'prefix' => 'api',
                 ],
             ],
