@@ -15,11 +15,11 @@ class Vacations extends ActiveRecord
     public function rules()
     {
     return [
-        ['title', 'string', 'max'=>255],
-        [['price','qt'], 'integer', 'min'=>0],
-
-        ['title','filter','filter'=>'strip_tags'],
-        ['title','filter','filter'=>'trim'],
+        //проверка на непустоту
+        [['user_id', 'begin', 'end'], 'required'],
+        //проверка соответствия типов
+        [['user_id'], 'integer'],
+        [['begin', 'end'], 'date', 'format' => 'php:Y-m-d']
         ];
     }
 }

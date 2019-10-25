@@ -1,6 +1,7 @@
 <?php
 
 namespace app\controllers;
+
 use yii\rest\ActiveController;
 use yii\filters\auth\HttpBearerAuth;
 use yii\filters\ContentNegotiator;
@@ -17,4 +18,11 @@ class VacationsController extends ActiveController
         // отключаем механизм сессий в api
         \Yii::$app->user->enableSession = false;
     }
+
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
+
+
 }
