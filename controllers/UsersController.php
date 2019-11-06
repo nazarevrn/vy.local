@@ -15,4 +15,14 @@ class UsersController extends ActiveController
         // отключаем механизм сессий в api
         \Yii::$app->user->enableSession = false;
     }
+
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
+
+    public function actionBar()
+    {
+        return $this->render('index');
+    }
 }

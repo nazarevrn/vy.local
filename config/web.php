@@ -61,6 +61,8 @@ $config = [
                     'prefix' => 'api',
                     
                 ],
+
+                'login' => 'users/bar'
                 
             ],
         ],
