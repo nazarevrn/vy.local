@@ -19,10 +19,10 @@ class VacationsController extends ActiveController
         \Yii::$app->user->enableSession = false;
     }
 
-    // public function actionIndex()
-    // {
-    //     return $this->render('index');
-    // }
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
 
 
 }

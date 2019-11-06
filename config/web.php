@@ -53,26 +53,15 @@ $config = [
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-        
-                // '/' => 'site/index',
-                // 'vacations/list'  => 'site/index',
-                // 'vacations/add'  => 'site/index',
-                // 'vacations/delete'  => 'site/index',
-                // 'vacations/approve'  => 'site/index',
-                //...
-                // '/' => 'vacations/index',
-                // 'vacations/list'  => 'vacations/index',
-                // 'vacations/add'  => 'vacations/index',
-                // 'vacations/delete'  => 'vacations/index',
-                // 'vacations/approve'  => 'vacations/index',
-        
-            [       /*
-                    api будет доступен по url, начинающимся с /api/vacations. но перенаправляться при этом на site/index
-                    */
+                        
+                [   
+
                     'class' => 'yii\rest\UrlRule',
-                    'controller' => 'vacations',
+                    'controller' => ['vacations', 'users'],
                     'prefix' => 'api',
+                    
                 ],
+                
             ],
         ],
     ],
