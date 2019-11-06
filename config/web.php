@@ -58,7 +58,7 @@ $config = [
 
                     'class' => 'yii\rest\UrlRule',
                     'controller' => ['vacations', 'users'],
-                    'prefix' => 'api',
+                    //'prefix' => 'api',
                     
                 ],
 

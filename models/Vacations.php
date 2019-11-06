@@ -15,9 +15,9 @@ class Vacations extends ActiveRecord
     {
         return [
             //проверка на непустоту
-            [['user_id', 'begin', 'end'], 'required'],
+            [['user_id', 'begin', 'end', 'status'], 'required'],
             //проверка соответствия типов
-            [['user_id'], 'integer'],
+            [['user_id', 'status'], 'integer'],
             [['begin', 'end'], 'date', 'format' => 'php:Y-m-d'],
         ];
     }
