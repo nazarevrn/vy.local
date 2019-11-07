@@ -18,6 +18,14 @@
             <label for="status">Status</label>
             <span>{{vacation.status}}</span>
         </div>
+        <div>
+            <label for="status">Изменен</label>
+            <span>{{vacation.updated_at}}</span>
+        </div>
+        <div>
+            <label for="status">Создан</label>
+            <span>{{vacation.created}}</span>
+        </div>
         </form>    
     </div>
 </template>
