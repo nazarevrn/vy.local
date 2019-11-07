@@ -62,7 +62,8 @@ $config = [
                     
                 ],
 
-                'login' => 'users/bar'
+                'login' => 'users/bar', 
+                '/' => 'site/index_new'
                 
             ],
         ],
